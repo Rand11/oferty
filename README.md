@@ -12,6 +12,6 @@ Strona wymaga do działania bazy danych, którą można zaimportować z pliku [B
 Testy JUnit operują na bazie danych o identycznej strukturze, ale innej nazwie: [BazaDanychDoJUnit.sql](BazaDanychDoJUnit.sql)
 
 ##TODO: 
-* przeprowadzać testy na oryginalnej bazie danych bez commitowania (rollback? @Transactional?)
+* przeprowadzać testy na oryginalnej bazie danych (rollback? @Transactional?)
 * umożliwić administratorom deaktywowanie kont użytkowników z panelu admina
 
