@@ -1,5 +1,3 @@
-# oferty
-
 ## Funkcjonalności
 * Rejestracja, logowanie, autoryzacja użytkowników
 * Dodawanie, edycja, usuwanie przez użytkownika 1 oferty widocznej na stronie powitalnej
