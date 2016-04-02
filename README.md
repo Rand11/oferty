@@ -9,6 +9,18 @@
 Strona wymaga do działania bazy danych, którą można zaimportować z pliku [BazaDanychWlasciwa.sql](BazaDanychWlasciwa.sql).
 Testy JUnit operują na bazie danych o identycznej strukturze, ale innej nazwie: [BazaDanychDoJUnit.sql](BazaDanychDoJUnit.sql)
 
+##Konfiguracja serwera Tomcat
+Do pliku context.xml należy dodać poniższe Resource
+```
+<Context>
+...
+<Resource name="jdbc/spring" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="root" password="" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/springtutorial"/>
+...
+</Context>
+```
 ##TODO: 
 * przeprowadzać testy na oryginalnej bazie danych (rollback? @Transactional?)
 * umożliwić administratorom deaktywowanie kont użytkowników z panelu admina
